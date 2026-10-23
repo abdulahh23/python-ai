@@ -7,7 +7,6 @@ calculates order prices, routes unanswered questions to suitable
 AI models, and prepares a session report for the owner.
 """
 
-# Constants: keep business settings in UPPER_CASE.
 BOT_NAME = "Sweet Crumbs Desk"
 DELIVERY_FEE = 200
 FREE_DELIVERY_LIMIT = 3000
@@ -96,9 +95,7 @@ while True:
                     discount = 0
 
                 discounted_subtotal = subtotal - discount
-
-                # Why: Delivery is free only when the discounted subtotal
-                # reaches the specified limit.
+                
                 if discounted_subtotal >= FREE_DELIVERY_LIMIT:
                     delivery_cost = 0
                 else:
@@ -119,8 +116,7 @@ while True:
                     f"Delivery: {delivery_cost:,.0f} PKR"
                 )
                 print(f"     Total: {total_cost:,.0f} PKR")
-
-    # FAQ rules
+    
     elif (
         "hi" == user_message
         or user_message.startswith("hi ")
@@ -174,16 +170,13 @@ while True:
             "300 PKR each, and chocolate cakes are 1,500 PKR each. "
             "Type /quote for an order estimate."
         )
-
-    # AI fallback for questions that rules cannot answer
+    
     else:
         unanswered_count += 1
 
         cleaned_question = user_message.capitalize()[:150]
         estimated_tokens = round(len(cleaned_question) / 4)
-
-        # Why: Private questions should use a local model instead of
-        # sending personal details to a cloud service.
+        
         if (
             "phone" in user_message
             or "cnic" in user_message
