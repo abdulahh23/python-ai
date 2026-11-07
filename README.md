@@ -1,5 +1,36 @@
 ***Python-ai***
 
+# Python for AI
+
+**Student:** Abdullah Shahid
+
+**Course:** Python for AI
+
+## My AI Goal
+My goal is to become a good AI Engineer and build AI-powered systems that automate business workflows.
+
+## How to Run
+
+Run the main project file:
+
+uv run main.py
+
+
+## Module 1 Project: AI Prompt Kit
+
+A Python tool that turns a local business's details into 3 ready-to-use AI prompts.
+
+**Run:**
+```bash
+uv run code/project_m1_prompt_kit.py
+```
+
+![Prompt Kit running](docs/project-m1-run.png)
+
+**Who would pay for this:**
+
+Small business owners who want to use AI for marketing, customer service and business growth but don't know what prompts to write.
+
 ## Task 1.8: Business Helper Bot — Intent Design
 
 **Business:** City Care Clinic

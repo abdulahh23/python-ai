@@ -1,8 +1,8 @@
-role = input("AI role: ")
-topic = input("Topic: ")
-level = input("Level: ")
+name = "Abdullah Shahid"
+dream_ai_role = "AI Engineer"
+business_problem = "Small businesses waste time handling repetitive customer enquiries."
 
-prompt = f"You are a {role}. Explain {topic} to a {level} in 3 bullet points."
-
-print("Your Prompt:")
-print(prompt)
+print(f"Name: {name}")
+print(f"Dream AI role: {dream_ai_role}")
+print(f"Problem I want to solve: {business_problem}")
+print("Why: I want to build AI systems that automate business workflows and save time.")
