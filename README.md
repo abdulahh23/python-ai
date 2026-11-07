@@ -84,3 +84,22 @@ The front desk saves staff time by answering repetitive questions automatically 
 - Design and rule test results: `docs/project-m1-part2-design.md`
 - AI test results: `docs/project-m1-part2-results.md`
 - Main Python program: `code/project_m1_front_desk.py`
+
+
+## Module 2 Checkpoint 1: AI Content Studio
+
+An AI-powered content studio for Sweet Crumbs Bakery that generates menu descriptions, streams social media posts, answers verified product prices, and chats with customers using conversation memory.
+
+### Run the project
+
+```bash
+uv run code/project_m2_content_studio.py
+```
+
+### Screenshot
+
+![Sweet Crumbs AI Content Studio session](docs/project-m2-cp1-run.png)
+
+### Business value
+
+This tool saves the bakery owner time by automating menu descriptions, marketing posts, and repetitive customer questions while keeping product prices accurate. A small business could pay for this service to reduce manual content creation and customer support work.
